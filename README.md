@@ -2,7 +2,7 @@
 
 **Chat App** là một ứng dụng nhắn tin được phát triển bằng Next.js phiên bản 14.2.14 và Firebase, sử dụng công nghệ mới nhất của Next.js.
 
-Ứng dụng tích hợp các thư viện hỗ trợ như Material UI và Sass để tạo ra giao diện đẹp mắt và phong cách.
+Ứng dụng tích hợp các thư viện hỗ trợ như Material UI, Tailwind và Sass để tạo ra giao diện đẹp mắt và phong cách.
 
 _Dự án được viết bởi Khánh Nguyên_
 
@@ -18,6 +18,7 @@ _Dự án được viết bởi Khánh Nguyên_
 -   React 18
 -   Next.js 14.2.11
 -   Firebase 10
+-   Tailwind
 -   Material UI
 -   Material Icons
 -   Sass 1.78
