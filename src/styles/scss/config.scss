@@ -1,0 +1,31 @@
+@import './custom';
+@import './variables';
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    ::-webkit-scrollbar {
+        width: 8px; 
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.ovft{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,17 @@
+//custom login
+.css-nmluci-MuiFormLabel-root-MuiInputLabel-root{
+    color: white !important;
+}
+.css-1o3an4k-MuiInputBase-input-MuiInput-input{
+    color: white !important;
+    font-size: 21px !important;
+    &::-ms-reveal{
+        filter: invert(100%) !important;       
+    }
+}
+.css-r5in8e-MuiInputBase-root-MuiInput-root::before{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.626) !important;
+}
+.css-r5in8e-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: 1px solid white !important;
+}
