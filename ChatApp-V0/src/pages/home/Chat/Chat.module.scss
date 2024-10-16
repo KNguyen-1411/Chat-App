@@ -1,0 +1,76 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin BgW{
+    background-color: #021526; 
+    color: #fff;
+}
+.headerContainer{
+    @include flexCenter;
+    @include BgW;
+    min-height: 80px;
+    padding-left:  20px;
+   border-left:1px solid #333333;
+}
+.messageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.FormInput{
+    display: flex;
+    position: relative;
+    input{
+        padding-right: 80px !important;
+    }
+    button{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+.ChatMain{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 80px auto 70px;
+    main{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 20px;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+    }
+}
+.btnDD{
+    button{
+        background: transparent !important;
+        border: none !important;
+        outline: none   !important;
+        padding-bottom: 2px;
+        font-size: 25px;
+        &::after{
+            display: none !important;
+        }
+    }
+}
+.DropdownMenu{
+    padding: 20px !important;
+    min-width: 200px !important;
+    button{
+        font-size: 12px !important;
+    }
+}

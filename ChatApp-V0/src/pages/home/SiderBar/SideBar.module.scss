@@ -1,0 +1,127 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin BgW {
+    background: linear-gradient(1deg, #000000, #021526);
+
+    color: #fff;
+}
+
+.roomid {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: -10px;
+        width: 240px;
+        height: 40px;
+        background: #2f68ad32;
+        z-index: -1;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    &:hover::after {
+        background: #03346E !important;
+
+    }
+}
+
+.activeRooms::after {
+    background: #03346E !important;
+}
+
+.aside {
+    @include BgW;
+    display: grid;
+    grid-template-rows: 80px auto 50px;
+    width: 270px !important;
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .aside {
+        transition: all 0.5s ease;
+        position: absolute;
+        left: -270px;
+    }
+    .SideBarActi {
+        left: 0 !important;
+        i{
+            &::before{
+                rotate: -180deg;
+            }
+        }
+    }
+    
+}
+
+
+.userContainer {
+    @include flexCenter;
+    min-height: 80px;
+    display: flex;
+    padding: 0 10px;
+
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .username {
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.dropdownid {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+
+    &::after {
+        display: none !important;
+    }
+}
+
+.menuDropdown {
+    min-width: 200px !important;
+    padding: 15px !important;
+    text-align: center !important;
+    left: -100% !important;
+    top: auto !important;
+}
+.btnAciveSideBar{
+    position: absolute;
+    top: 45%;
+    right: -28px;
+    i{
+        font-size: 40px;
+        color: rgb(2, 2, 23);
+        &::before{
+            transition: all 0.5s ease;
+            background-color: #fff;
+            border-radius: 50%;
+            outline: 3px solid #fff;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .btnAciveSideBar{
+        display: none;
+    }
+}

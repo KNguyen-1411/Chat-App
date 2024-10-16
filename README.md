@@ -6,6 +6,8 @@
 
 _Dự án được viết bởi Khánh Nguyên_
 
+**Ngoài ra** còn có chatapp phiên bản thử nghiệm được viết bằng React js + vite và scss được thêm vào.
+
 ## Tính Năng
 
 -   **Đăng nhập dễ dàng**: Hỗ trợ đăng nhập qua tài khoản Google hoặc Facebook, cũng như bằng tài khoản Gmail và mật khẩu đã đăng ký.

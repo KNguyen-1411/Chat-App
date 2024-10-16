@@ -1,0 +1,12 @@
+.app{
+    display: grid;
+    grid-template-columns:270px auto;
+}
+@media (max-width: 768px) {
+    .app{
+        grid-template-columns: auto;
+    }
+    
+}
+
+
